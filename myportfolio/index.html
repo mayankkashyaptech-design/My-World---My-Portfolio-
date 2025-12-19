@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank | Portfolio</title>
+  <link rel="stylesheet" href="myportfolio.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <img src="mklogo1.png" alt="Mayank Logo" />
+       <div class="menu-toggle" id="menuToggle">☰</div>
+       <div class="nav-links" id="navLinks">
+        <div class="close-btn" id="closeMenu">✖</div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+       <script src="navbar.js"></script>
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Mayank Vijay Singh Kashyap</h1>
+      <p>AN ASPIRING MCA STUDENT</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am an aspiring MCA student with a strong passion for technology and problem-solving.
+      I have a keen interest in software development, web technologies, and database management,
+      and I continuously work on enhancing my technical and analytical skills. Through academic
+      projects and hands-on practice, I have gained experience in programming, designing
+      user-friendly applications, and understanding real-world software requirements. I believe
+      in continuous learning and staying updated with emerging technologies to build efficient
+      and scalable solutions. With a disciplined mindset, adaptability, and a strong desire to
+      grow as a technology professional, I aim to contribute effectively to innovative projects
+      and make a meaningful impact in the IT industry.
+    </p>
+  </section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">PHP</div>
+      <div class="skill-card">SQL & Databases</div>
+      <div class="skill-card">Mongo DB</div>
+      <div class="skill-card">C/C++</div>
+      <div class="skill-card">Core Java</div>
+      <div class="skill-card">Python</div>
+    </div>
+  </section>
+  <!-- PROJECTS -->
+ <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>MV-Tech - Elevator Contract Booking System</h3>
+
+      <p class="project-text">
+        An online platform for booking private elevators on demand.
+        This project provides a modern solution for managing elevator bookings,
+        schedules, and customer requests through a web-based interface.
+        <span class="more-text">
+          <br>
+          ✨ Features<br>
+          🏢 Elevator Booking – Users can book elevators for personal or corporate use.<br>
+          📅 Scheduling System – Select time slots and manage reservations.<br>
+          👤 User Accounts – Register/login to manage bookings.<br>
+          📊 Admin Dashboard – View/manage all bookings, users, and schedules.<br>
+          📱 Responsive Design – Works seamlessly on desktop and mobile.<br>
+          🔐 Secure Authentication – User data protected with JWT and bcrypt.
+        </span>
+      </p>
+
+      <button class="view-btn">View More</button>
+    </div>
+  </div>
+  <!-- Project 2 -->
+  <div class="project-card">
+    <h3>My Portfolio</h3>
+    <p class="project-text">MyPortfolio is a professionally designed personal portfolio website developed to present my profile, technical expertise, and project experience in a clean, structured, and visually appealing manner. The website serves as a digital identity that highlights my journey as an aspiring MCA student and software developer, while ensuring a smooth and user-friendly browsing experience across all devices.
+      <span class="more-text">
+      <br>
+      🔹 About Me - The About Me section provides a concise yet impactful overview of my academic background, professional interests, and career aspirations.  
+       <br>
+      🔹 Skills - The Skills section showcases my core technical competencies, including front-end and back-end technologies.
+       <br>
+      🔹 Projects - The Projects section presents a curated collection of my academic and personal projects with clear descriptions of functionality and features.
+       <br>
+      🔹 Contact Me - The Contact Me section enables easy and direct communication, allowing recruiters, collaborators, or potential employers   to connect with me effortlessly.
+      </span>
+      
+    </p>
+    <button class="view-btn">View More</button>
+  </div>
+</section>
+
+<script src="viewbtn.js"></script>
+<!-- CONTACT US -->
+ <section id="contact" class="contact">
+   <h2>Contact Me</h2>
+  <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="email" id="email" placeholder="Your Email" required />
+  <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="myporrtfolio.js"></script>
+
+  </section>
+  <script src="showmsg.js"></script>
+    <button id="topBtn" onclick="scrollToTop()">Back To Top</button>
+    <script src="back2top.js"></script>
+  <footer>
+    <p>&copy; 2025 Mayank Vijay Singh Kashyap | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
